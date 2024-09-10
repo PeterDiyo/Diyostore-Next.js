@@ -6,11 +6,11 @@ function AboutPage() {
         <span className="block text-primary mt-2">Diyostore</span>
       </h1>
       <p className="mt-8 text-xl leading-relaxed max-w-3xl mx-auto text-gray-700">
-        At Diyostore, we believe in more than just selling products—we believe
-        in empowering creativity and innovation. Our store offers carefully
-        selected items designed to help you turn your ideas into reality.
-        Whether you're crafting, designing, or building, Diyostore is your go-to
-        destination for all your DIY needs.
+        At Diyostore, we believe in more than just selling products&mdash;we
+        believe in empowering creativity and innovation. Our store offers
+        carefully selected items designed to help you turn your ideas into
+        reality. Whether you&rsquo;re crafting, designing, or building,
+        Diyostore is your go-to destination for all your DIY needs.
       </p>
       <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
         Join our growing community of makers, creators, and dreamers who know

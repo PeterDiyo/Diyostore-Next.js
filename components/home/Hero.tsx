@@ -9,11 +9,11 @@ function Hero() {
         <h1 className="max-w-xl font-semibold text-4xl tracking-tight sm:text-5xl">
           Shop at Diyostore
         </h1>
-        <p className="mt-8 max-w-xl text-lg leading-8 text-muted-foreground">
+        <p className="mt-6 max-w-xl text-lg leading-7 text-gray-700">
           Discover a world of quality and style. At Diyostore, we bring you the
-          best products for your needs. Whether it's for home, lifestyle, or
-          fashion, elevate your experience with us. Join our community and enjoy
-          exclusive offers and unmatched service
+          best products for your needs. Whether it&rsquo;s for home, lifestyle,
+          or fashion, elevate your experience with us. Join our community and
+          enjoy exclusive offers and unmatched service.
         </p>
         <Button asChild size="lg" className="mt-10 bg-slate-900">
           <Link href="/products">Products</Link>
