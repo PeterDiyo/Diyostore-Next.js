@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Container from "@/components/global/Container";
 import Footer from "@/components/home/Footer";
+import { Toaster } from "@/components/ui/toaster";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="sticky top-0 z-50 bg-white">
-          <Navbar />
-        </div>
-        <div className="bg-slate-100 min-h-screen">
-          <Container className="py-7">{children}</Container>
-        </div>
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <div className="sticky top-0 z-50 bg-white">
+            <Navbar />
+          </div>
+          <div className="bg-slate-100 min-h-screen">
+            <Container className="py-7">{children}</Container>
+          </div>
+          <Footer />
+          <Toaster />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
